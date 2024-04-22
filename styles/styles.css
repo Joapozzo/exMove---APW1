@@ -1,0 +1,138 @@
+/* Global */
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+:root {
+    --blue-dark: #1E0342;
+    --blue-light: #0E46A3;
+    --blue-light-2: #9AC8CD;
+    --blue-light-3: #E1F7F5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 20px 100px;
+    background-color: var(--blue-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-list > li > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-list > li > a.active {
+    color: var(--blue-light-2);
+    font-weight: 600;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    color: white;
+}
+
+.hero-text > a {
+    background-color: var(--blue-light);
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.hero-text > a:hover {
+    background-color: transparent;
+    border: 0.5px solid var(--blue-light);
+    transition: all 0.1s ease-in;
+}
+
+/* Categorias */
+
+.categorias {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categorias-title {
+    font-size: 30px;
+    color: var(--blue-dark);
+}
+
+.categoriaslist-container {
+    display: flex;
+    gap: 100px;
+    background-color: var(--blue-light);
+    border-radius: 25px;
+    padding: 15px 70px;
+}
+
+.categoriaslist-container > a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Cards */
