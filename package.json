@@ -11,8 +11,8 @@
   "devDependencies": {
     "five-server": "^0.3.3"
   },
-  "description": "",
   "dependencies": {
     "save-dev": "^0.0.1-security"
-  }
+  },
+  "description": ""
 }
